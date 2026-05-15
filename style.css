@@ -590,6 +590,14 @@ body {
   color: var(--text-dim);
 }
 
+.project-meta {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  margin-bottom: 14px;
+  letter-spacing: 0.05em;
+}
+
 .project-link {
   font-family: var(--font-mono);
   font-size: 0.8rem;
