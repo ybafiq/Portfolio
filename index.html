@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Bioinformatics & AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ░░ NAV ░░ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">
+        <span class="logo-bracket">[</span>
+        BIO<span class="logo-accent">_</span>DEV
+        <span class="logo-bracket">]</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ░░ HERO ░░ -->
+  <section id="hero">
+    <canvas id="bioCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-tag">Bioinformatics &amp; Biology · UKM · FGV R&amp;D Intern</p>
+      <h1 class="hero-title">
+        <span class="line">Decoding</span>
+        <span class="line accent-text">Biology</span>
+        <span class="line">Through Code</span>
+      </h1>
+      <p class="hero-sub">
+        Building AI systems that see pangolins, detect bagworms, and make sense of the living world — one model at a time.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ░░ ABOUT ░░ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">01 / About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Where Biology<br><em>Meets Intelligence</em></h2>
+          <p>
+            I'm a Bioinformatics and Biology student at <strong>Universiti Kebangsaan Malaysia (UKM)</strong>, currently interning at <strong>FGV R&D</strong> where I apply computer vision and machine learning to solve real agricultural and conservation challenges.
+          </p>
+          <p>
+            My work sits at the intersection of life sciences and software engineering — from detecting endangered species behaviour to deploying mobile apps for crop disease identification in the field.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num" data-target="2">0</span>
+              <span class="stat-label">AI Systems Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="4">0</span>
+              <span class="stat-label">Core Tech Stacks</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="1">0</span>
+              <span class="stat-label">Industry Internship</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="bio-card">
+            <div class="bio-card-header">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="bio-card-title">profile.json</span>
+            </div>
+            <pre class="bio-card-code"><span class="c-key">"name"</span>: <span class="c-str">"Bioinformatics Dev"</span>,
+<span class="c-key">"university"</span>: <span class="c-str">"UKM"</span>,
+<span class="c-key">"internship"</span>: <span class="c-str">"FGV R&amp;D"</span>,
+<span class="c-key">"focus"</span>: [
+  <span class="c-str">"Computer Vision"</span>,
+  <span class="c-str">"Bioinformatics"</span>,
+  <span class="c-str">"Mobile Development"</span>
+],
+<span class="c-key">"status"</span>: <span class="c-accent">"open_to_opportunities"</span></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SKILLS ░░ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label">02 / Skills</div>
+      <h2 class="section-title">Technical <em>Arsenal</em></h2>
+      <div class="skills-grid" id="skillsGrid">
+
+        <div class="skill-card" data-delay="0">
+          <div class="skill-icon">🐍</div>
+          <h3>Python</h3>
+          <p>Data analysis, model training, scripting, and bioinformatics pipelines.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 90%"></div></div>
+          <span class="skill-tag">AI / ML</span>
+        </div>
+
+        <div class="skill-card" data-delay="80">
+          <div class="skill-icon">⚡</div>
+          <h3>YOLO</h3>
+          <p>Real-time object detection for wildlife behaviour and agricultural pest systems.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 82%"></div></div>
+          <span class="skill-tag">Computer Vision</span>
+        </div>
+
+        <div class="skill-card" data-delay="160">
+          <div class="skill-icon">📱</div>
+          <h3>Flutter</h3>
+          <p>Cross-platform mobile apps with clean UI and real-time inference integration.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 75%"></div></div>
+          <span class="skill-tag">Mobile Dev</span>
+        </div>
+
+        <div class="skill-card" data-delay="240">
+          <div class="skill-icon">🌿</div>
+          <h3>Laravel</h3>
+          <p>Backend APIs, admin dashboards, and database management for web platforms.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 70%"></div></div>
+          <span class="skill-tag">Web Dev</span>
+        </div>
+
+        <div class="skill-card" data-delay="320">
+          <div class="skill-icon">🧬</div>
+          <h3>Bioinformatics</h3>
+          <p>Sequence analysis, genomic data workflows, and biological data interpretation.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 80%"></div></div>
+          <span class="skill-tag">Bioinformatics</span>
+        </div>
+
+        <div class="skill-card" data-delay="400">
+          <div class="skill-icon">🗄️</div>
+          <h3>SQL / MySQL</h3>
+          <p>Relational database design, complex queries, and data persistence layers.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--pct: 68%"></div></div>
+          <span class="skill-tag">Database</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PROJECTS ░░ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label">03 / Projects</div>
+      <h2 class="section-title">Featured <em>Work</em></h2>
+
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai-ml">AI / ML</button>
+        <button class="filter-btn" data-filter="mobile-dev">Mobile Dev</button>
+        <button class="filter-btn" data-filter="bioinformatics">Bioinformatics</button>
+        <button class="filter-btn" data-filter="web-dev">Web Dev</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <article class="project-card" data-category="ai-ml">
+          <div class="project-img project-img-1">
+            <div class="project-overlay">
+              <span class="project-cat-badge">AI / ML · Computer Vision</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Sunda Pangolin Behaviour Detection</h3>
+            <p>A YOLOv8-powered computer vision system trained to detect and classify Sunda pangolin behaviours from camera trap footage, aiding conservation monitoring efforts.</p>
+            <div class="project-tech">
+              <span>Python</span><span>YOLOv8</span><span>OpenCV</span><span>PyTorch</span>
+            </div>
+            <a href="#" class="project-link">View Project →</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="mobile-dev">
+          <div class="project-img project-img-2">
+            <div class="project-overlay">
+              <span class="project-cat-badge">Mobile Dev · AI / ML</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>CasedAI — Bagworm Detection App</h3>
+            <p>A Flutter mobile application integrated with a trained detection model to identify bagworm infestations on oil palm leaves in the field — built during the FGV R&D internship.</p>
+            <div class="project-tech">
+              <span>Flutter</span><span>Dart</span><span>YOLO</span><span>Laravel API</span>
+            </div>
+            <a href="#" class="project-link">View Project →</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="bioinformatics">
+          <div class="project-img project-img-3">
+            <div class="project-overlay">
+              <span class="project-cat-badge">Bioinformatics</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Genomic Sequence Analysis Pipeline</h3>
+            <p>An automated bioinformatics workflow for processing and annotating genomic sequences, integrating standard tools into a reproducible analysis pipeline.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Biopython</span><span>Bash</span><span>BLAST</span>
+            </div>
+            <a href="#" class="project-link">View Project →</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web-dev">
+          <div class="project-img project-img-4">
+            <div class="project-overlay">
+              <span class="project-cat-badge">Web Dev</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>FGV Field Data Dashboard</h3>
+            <p>A Laravel-powered web dashboard for aggregating, visualising, and managing detection data from field devices — providing actionable insights for plantation management teams.</p>
+            <div class="project-tech">
+              <span>Laravel</span><span>PHP</span><span>MySQL</span><span>Chart.js</span>
+            </div>
+            <a href="#" class="project-link">View Project →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="no-results" id="noResults" style="display:none;">No projects found in this category.</p>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT ░░ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label">04 / Contact</div>
+      <div class="contact-grid">
+        <div class="contact-text">
+          <h2 class="section-title">Let's Build<br><em>Something</em></h2>
+          <p>Whether it's a research collaboration, internship opportunity, or just a conversation about AI in biology — my inbox is open.</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <span>Selangor, Malaysia</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🎓</span>
+              <span>Universiti Kebangsaan Malaysia</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🔬</span>
+              <span>FGV R&D Intern</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="name" placeholder="Your full name" autocomplete="off" />
+            <span class="field-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="femail">Email</label>
+            <input type="email" id="femail" name="email" placeholder="you@example.com" autocomplete="off" />
+            <span class="field-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="fsubject">Subject</label>
+            <input type="text" id="fsubject" name="subject" placeholder="What's this about?" autocomplete="off" />
+            <span class="field-error" id="subjectError"></span>
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" name="message" rows="5" placeholder="Tell me more..."></textarea>
+            <span class="field-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-loader" style="display:none;">Sending…</span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✓ Message received! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="nav-logo"><span class="logo-bracket">[</span>BIO<span class="logo-accent">_</span>DEV<span class="logo-bracket">]</span></span>
+      <p>Built with Vanilla HTML, CSS &amp; JavaScript · © 2025</p>
+      <div class="footer-links">
+        <a href="#hero">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
